@@ -1,5 +1,5 @@
 export interface IBaseModel {
-  id: string;
-  createdAt: Date;
-  updateddAt: Date;
+  readonly id: string;
+  readonly createdAt: Date;
+  readonly updateddAt: Date;
 }
