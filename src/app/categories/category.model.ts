@@ -1,4 +1,5 @@
-export interface ICategory {
-  id: string | number;
+import { IBaseModel } from "../base.mode";
+
+export interface ICategory extends IBaseModel {
   name: string;
 }
