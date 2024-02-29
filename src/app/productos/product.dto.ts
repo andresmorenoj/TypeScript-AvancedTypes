@@ -5,3 +5,5 @@ export interface ICreatedProductoDto extends Omit<IProduct, 'id' | 'createdAt' |
 }
 
 export interface IUpdateProductDto extends Partial<ICreatedProductoDto>{};
+
+export interface IFindProducts extends Readonly<Partial<ICreatedProductoDto>>{};
