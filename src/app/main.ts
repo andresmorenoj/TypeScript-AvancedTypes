@@ -27,5 +27,6 @@ updateProduct(product.id, {
 
 findProducts({
   stock: 10,
-  isNew: false
+  isNew: false,
+  tags: ['tag1']
 })

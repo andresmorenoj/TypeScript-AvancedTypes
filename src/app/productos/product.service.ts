@@ -1,11 +1,11 @@
 import { faker } from '@faker-js/faker';
 
 import { IProduct } from './producto.model';
-import { ICreatedProductoDto, IUpdateProductDto, IFindProducts } from './product.dto';
+import { ICreatedProductDto, IUpdateProductDto, IFindProducts } from './product.dto';
 
 export const products: IProduct[] = [];
 
-export const addProduct = (data: ICreatedProductoDto): IProduct => {
+export const addProduct = (data: ICreatedProductDto): IProduct => {
   const newProduct = {
     ...data,
     id: faker.string.uuid(),
